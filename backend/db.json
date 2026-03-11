@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "emp_id": "10293",
+      "name": "Vishal Bhalla",
+      "role": "Developer",
+      "assigned_project": "Airtely",
+      "skill": "Angulary"
+    },
+    {
+      "id": 2,
+      "emp_id": "20391",
+      "name": "Mankesh",
+      "role": "Tester",
+      "assigned_project": "Airtel",
+      "skill": "Angular"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,15 @@
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend/db.json:/data/db.json
+
+  frontend:
+    build: ./project-resource-roster
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
