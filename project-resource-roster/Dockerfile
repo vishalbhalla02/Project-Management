@@ -15,6 +15,12 @@ RUN pnpm install --frozen-lockfile
 # Copy all source
 COPY . .
 
+# Replace placeholder with environment variable
+ARG API_URL
+RUN if [ -n "$API_URL" ]; then \
+      sed -i "s|API_URL_PLACEHOLDER|$API_URL|g" src/environments/environment.prod.ts; \
+    fi
+
 # Build the project using pnpm
 RUN pnpm run build
 

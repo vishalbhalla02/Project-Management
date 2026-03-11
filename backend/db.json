@@ -5,16 +5,80 @@
       "emp_id": "10293",
       "name": "Vishal Bhalla",
       "role": "Developer",
-      "assigned_project": "Airtely",
-      "skill": "Angulary"
+      "assigned_project": "Airtel",
+      "skill": "Angular"
     },
     {
       "id": 2,
       "emp_id": "20391",
-      "name": "Mankesh",
+      "name": "Mankesh Sharma",
       "role": "Tester",
       "assigned_project": "Airtel",
       "skill": "Angular"
+    },
+    {
+      "id": 3,
+      "emp_id": "30912",
+      "name": "Rohit Mehta",
+      "role": "Frontend Developer",
+      "assigned_project": "Vodafone Portal",
+      "skill": "React"
+    },
+    {
+      "id": 4,
+      "emp_id": "40231",
+      "name": "Anita Kapoor",
+      "role": "Backend Developer",
+      "assigned_project": "Jio Dashboard",
+      "skill": "Node.js"
+    },
+    {
+      "id": 5,
+      "emp_id": "50944",
+      "name": "Karan Malhotra",
+      "role": "DevOps Engineer",
+      "assigned_project": "Airtel",
+      "skill": "Docker"
+    },
+    {
+      "id": 6,
+      "emp_id": "61822",
+      "name": "Neha Verma",
+      "role": "UI Designer",
+      "assigned_project": "Vodafone Portal",
+      "skill": "Figma"
+    },
+    {
+      "id": 7,
+      "emp_id": "72119",
+      "name": "Sahil Gupta",
+      "role": "Backend Developer",
+      "assigned_project": "Jio Dashboard",
+      "skill": "Spring Boot"
+    },
+    {
+      "id": 8,
+      "emp_id": "83402",
+      "name": "Priya Singh",
+      "role": "QA Engineer",
+      "assigned_project": "Airtel",
+      "skill": "Selenium"
+    },
+    {
+      "id": 9,
+      "emp_id": "94510",
+      "name": "Aditya Nair",
+      "role": "Full Stack Developer",
+      "assigned_project": "Vodafone Portal",
+      "skill": "Angular + Node"
+    },
+    {
+      "id": 10,
+      "emp_id": "10533",
+      "name": "Rahul Chatterjee",
+      "role": "Project Manager",
+      "assigned_project": "Jio Dashboard",
+      "skill": "Agile Management"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
