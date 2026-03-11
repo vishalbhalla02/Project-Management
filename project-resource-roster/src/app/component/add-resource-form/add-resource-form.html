@@ -1,0 +1,41 @@
+<mat-dialog-content  [formGroup]="userForm" class="flex flex-col gap-2 p-5">
+  <mat-form-field appearance="outline">
+    <mat-label>Employee Id</mat-label>
+    <input matInput formControlName="emp_id" required />
+    @if (userForm.get('emp_id')?.invalid && userForm.get('emp_id')?.touched) {
+      <mat-error>Employee ID is required</mat-error>
+    }
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label >Employee Name</mat-label>
+    <input matInput formControlName="name" required />
+    @if (userForm.get('name')?.invalid && userForm.get('name')?.touched) {
+      <mat-error>Name is required</mat-error>
+    }
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Employee Role</mat-label>
+    <input matInput formControlName="role" required />
+    @if (userForm.get('role')?.invalid && userForm.get('role')?.touched) {
+      <mat-error>Role is required</mat-error>
+    }
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Employee Assigned Project</mat-label>
+    <input matInput formControlName="assigned_project" required />
+    @if (userForm.get('assigned_project')?.invalid && userForm.get('assigned_project')?.touched) {
+      <mat-error>Project is required</mat-error>
+    }
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Employee Skill</mat-label>
+    <input matInput formControlName="skill" required />
+    @if (userForm.get('skill')?.invalid && userForm.get('skill')?.touched) {
+      <mat-error>Skill is required</mat-error>
+    }
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button [mat-dialog-close]="false">Cancel</button>
+  <button mat-raised-button color="primary" [mat-dialog-close]="userForm.value" [disabled]="userForm.invalid">{{formType}}</button>
+</mat-dialog-actions>

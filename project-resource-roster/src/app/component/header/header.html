@@ -1,0 +1,14 @@
+<ol class="flex justify-between items-center bg-gray-700 p-5 text-white">
+    <!-- Left Side: Links -->
+    <div class="flex gap-4 items-center list-none">
+        <button routerLink="/">Home</button>
+        <button routerLink="/about">About</button>
+        <button routerLink="/contact">Contact</button>
+    </div>
+    
+    <!-- Right Side: Action -->
+    <button class="bg-blue-500 p-2 rounded-md hover:bg-blue-600 transition" 
+            (click)="toggleAddUser()">
+      Add Resource
+    </button>
+</ol>
